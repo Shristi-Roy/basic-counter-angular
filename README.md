@@ -1,3 +1,15 @@
+🚀 Features:
+
+Increment, Decrement, and Reset functionality
+
+Event binding with (click)
+
+Conditional logic inside a component
+
+Styled with custom CSS
+
+
+
 # AngularTut
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.1.
