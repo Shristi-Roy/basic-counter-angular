@@ -1,12 +1,25 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  standalone: true,
+  imports: [],
   templateUrl: './app.html',
-  styleUrl: './app.css'
+  styleUrls: ['./app.css'],
 })
 export class App {
-  protected title = 'angular-tut';
+  count = 0;
+
+  handleCounter(val: string) {
+    if (val === 'minus') {
+      if (this.count > 0) {
+        this.count = this.count - 1;
+      }
+    } else if (val === 'plus') {
+      this.count = this.count + 1;
+    } else {
+      this.count = 0;
+    }
+  }
+  
 }
